@@ -1,19 +1,20 @@
 import React, { Component } from 'react';    
      
-class Baseroute extends component {
-    contructor(props)
+class Baseroute extends Component {
+    constructor(props) {
     super(props);
-    this.state {
+    this.state = {
         selectedpokemon: null,
         location: [],
         type: [],
         generation: []
     }
+}
 
 
     async componentDidMount() {
      const res = 
-        await  fetch('https://pokeapi.co/api/v2/pokemon/${this.props.match.params.name}/', {cache: "force-cache"})
+        await  fetch(`https://pokeapi.co/api/v2/pokemon/${this.props.match.params.name}/`, {cache: "force-cache"})
         const json = await res.json()
 
   
