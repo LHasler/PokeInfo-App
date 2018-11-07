@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class PokeSearch extends Component {
     constructor() {
@@ -41,8 +42,10 @@ class PokeSearch extends Component {
             value={this.state.search} />
             <ul>
               {results.map(r => 
-                <li  onClick={() => this.selectPokemon(r.name)}>
-                  {r.name}
+                <li key={r.name}>
+                    <Link to={`/pokemon/${r.name}`}>
+                        {r.name}
+                    </Link>
                 </li>
               )}
             </ul>
@@ -54,3 +57,5 @@ class PokeSearch extends Component {
   }
 
   export default PokeSearch; 
+
+  
