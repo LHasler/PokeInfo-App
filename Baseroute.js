@@ -74,4 +74,4 @@ class Baseroute extends Component {
   }
 }
 
-  export default Baseroute; 
+  export default Baseroute;
