@@ -1,34 +1,133 @@
-/***********
-Main styling
-************/
+
+:root {
+  background: black;
+}
+
 
 body {
-    margin: 0;
-    padding: 0;
+  padding: 100px;
+  background: black;
+
+}
+
+p {
+  background: transparent;
+  color: cyan;
+  margin: 20px;
+  padding: 0px;
+  text-align: center;
+  
+}
 
 .App {
-        display: flex;
-    }
-
-.App .search {
-    height: 40px;
-    padding: 20px;
-    width: 80%;
-    }
+  color: cyan;
+  background: black;
+}
 
 
+/****search bar****/
+.search {
+  background: black;
+  text-align: center;
+}
 
 
 
-/***********
-Media Query
-***********/
+/****Suggestions that appear below search bar*****/
+.search
+ul li {
+list-style: none;
+padding: 25px;
+cursor: pointer;
+text-transform: capitalize;
+text-align: center;
+}
 
-@media only screen and (max-device-width: 480px) {
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #ccc;
-    }    
+/**text put in search bar**/
+.search 
+input {
+  height: 40px;
+  width: 80%;
+  margin-bottom: 25px;
+  color: cyan;
+  text-align: center;
+  cursor: pointer;
+  background: rgb(53, 58, 68);
+}
 
+
+.search 
+ul li:hover {
+background-color: rgb(56, 56, 56); 
+border-radius: 100px;
+}
+
+input {
+  color: black;
+}
+
+
+/****Pokemon that is returned*****/
+/* .result {
+  color: cyan;
+  background-color: rgb(182, 55, 55);
+  padding: 15px;
+  margin: 100px;
+  width: 50%;
+  height: 100%;
+  text-transform: capitalize;
+  position: center;
+  font-size: 15px;
+  background: slategrey;\
+  text-align: center;
+} */
+
+.results {
+  color: cyan;
+  background: black;
+  padding: 70px;
+  text-transform: capitalize; 
+  border: none;
+}
+
+
+.sprite{
+
+    background: black;
+}
+
+
+.shiny {
+  position: center;
+}
+
+
+.types  {
+    color: cyan;
+    font-size: 20px;
+    font-style: italic;
+    width: 100%;
+  }
+
+
+.held_items {
+    color: cyan;
+
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.game_indices {
+  color: cyan;
+  align: right;
+  position: right;
+  font-size: 20px;
+  font-style: italic;
+}
+
+
+/************
+Media Queries
+*************/
