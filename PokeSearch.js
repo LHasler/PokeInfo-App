@@ -43,7 +43,7 @@ class PokeSearch extends Component {
             <ul>
               {results.map(r => 
                 <li key={r.name}>
-                    <Link to={`/pokemon/${r.name}`}>
+                    <Link to={`/Baseroute/${r.name}`}>
                         {r.name}
                     </Link>
                 </li>
@@ -57,5 +57,3 @@ class PokeSearch extends Component {
   }
 
   export default PokeSearch; 
-
-  
