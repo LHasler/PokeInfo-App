@@ -30,7 +30,7 @@ class PokeSearch extends Component {
       }
     }
 
-  
+  /* Search bar funtion */ 
     render() {
       const results = this.generateSearchResults(this.state.search)
       return (
